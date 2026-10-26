@@ -258,5 +258,109 @@ footer h2 {
   margin-bottom: 25px;
 }
 
-/* Página Acomodações */
+/* Página de acomodações */
+.pagina-acomodacoes {
+  padding: 50px 0;
+  background-color: #fff9e9;
+}
 
+.titulo-pagina-acomodacoes {
+  width: fit-content;
+  margin: 0 auto 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c9a6;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  text-align: center;
+}
+
+.pagina-acomodacoes .card {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.pagina-acomodacoes .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.pagina-acomodacoes .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-acomodacoes .card-title {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pagina-acomodacoes .card-text,
+.pagina-acomodacoes .detalhes-quarto {
+  color: #888;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.pagina-acomodacoes .btn-detalhes {
+  align-self: flex-start;
+  border: 0;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.pagina-acomodacoes .btn-detalhes:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Página de lazer */
+.pagina-lazer {
+  padding: 50px 0;
+  background-color: #fff9e9;
+}
+
+.titulo-pagina-lazer {
+  width: fit-content;
+  margin: 0 auto 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c9a6;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  text-align: center;
+}
+
+.pagina-lazer .card {
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.pagina-lazer .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.pagina-lazer .card-body {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.pagina-lazer .card-title {
+  margin: 0;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
