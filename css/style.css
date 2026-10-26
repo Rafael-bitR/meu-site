@@ -1,0 +1,262 @@
+/* Botão estilo global */
+.btn-primary {
+  color: #123c46;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #ffa412;
+  border-color: #ffa412;
+}
+
+.btn-primary:hover {
+  background-color: #f9dd72;
+  border-color: #f9dd72;
+  color: #123c46;
+}
+
+/* Menu estilo */
+
+.logo img {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu estilo */
+.menu {
+  display: flex;
+  gap: 50px;
+  margin-left: 50px;
+  margin-top: 2px;
+}
+
+/* Menu links estilo */
+.menu a {
+  text-decoration: none;
+  color: #fff9e9;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/* Menu links hover estilo */
+.menu a:hover {
+  color: #20c9a6;
+}
+
+/* botão reserva menu estilo */
+.reserva-menu {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 2px;
+  padding: 6px 16px;
+  border-radius: 5px;
+  transform: translateY(-1px);
+}
+
+header {
+  background-color: #123c46;
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* Destaque estilo */
+.destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destaque img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.destaque h1 {
+  font-family:
+    Cormorant Garamond,
+    serif;
+  color: #123c46;
+  font-size: 70px;
+}
+
+.destaque p {
+  font-family: "Poppins", sans-serif;
+  color: #123c46;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Botão reserva destaque estilo */
+.reserva-destaque {
+  padding: 6px 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.hero-img {
+  background-image: url("../img/praias/praia4.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+
+/* Main estilo */
+main {
+  padding: 50px 0;
+  background-color: #fff9e9;
+}
+
+/* Main titulo estilo */
+.titulo-sobre {
+  font-family:
+    cormorant garamond,
+    serif;
+  font-size: 50px;
+  color: #123c46;
+}
+
+/* Main paragrafo estilo */
+.paragrafo-sobre {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #123c46;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* Main imagem */
+.sobre .col-md-5 img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Main titulo sobre */
+.titulo-sobre-secao {
+  font-family:
+    cormorant garamond,
+    serif;
+  font-size: 55px;
+  color: #123c46;
+  margin: 0 auto 50px;
+  text-align: center;
+  border-bottom: 2px solid #20c9a6;
+  padding-bottom: 8px;
+  width: fit-content;
+  margin-top: -40px;
+}
+
+/* Main titulo destaques */
+.titulo-destaque {
+  font-family:
+    cormorant garamond,
+    serif;
+  font-size: 55px;
+  color: #123c46;
+  margin: 0 auto 50px;
+  text-align: center;
+  border-bottom: 2px solid #20c9a6;
+  padding-bottom: 8px;
+  width: fit-content;
+  margin-top: 170px;
+}
+
+/* Main texto destaques */
+.destaque-site p {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #123c46;
+}
+
+/* Main imagem destaques */
+.destaque-site .col-md-4 img {
+  aspect-ratio: 1.6 / 1.2;
+  object-fit: cover;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.destaque-site .col-md-4 {
+  text-align: center;
+}
+
+/* acomodações destaque */
+.titulo-acomodacao {
+  font-family:
+    cormorant garamond,
+    serif;
+  font-size: 55px;
+  color: #123c46;
+  margin: 0 auto 50px;
+  text-align: center;
+  border-bottom: 2px solid #20c9a6;
+  padding-bottom: 8px;
+  width: fit-content;
+  margin-top: 170px;
+}
+
+.acomodacao-destaque .card {
+  background-color: #20c9a6;
+}
+
+/*Rodapé*/
+footer {
+  background-color: #333;
+  color: white;
+  padding: 32px 0 16px;
+}
+
+.redes-sociais img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.icones-redes {
+  display: flex;
+  gap: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+footer address a,
+footer nav[aria-label="Links do rodapé"] a {
+  display: block;
+}
+
+.direitos-reservados {
+  margin-top: 100px;
+}
+
+footer address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer address p {
+  margin: 0;
+}
+
+footer nav[aria-label="Links do rodapé"] a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+footer h2 {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+}
+
+/* Página Acomodações */
+

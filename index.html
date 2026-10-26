@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Resort Beira-Mar</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--Hero e menu do site-->
+    <div class="hero-img">
+      <div id="menu"></div>
+
+      <section class="destaque">
+        <img src="img/logo/logo-nome.png" alt="Logo do Resort Beira-Mar" />
+
+        <h1>Seu refúgio perfeito</h1>
+
+        <p>Para um descanso inesquecível.</p>
+
+        <a class="btn btn-primary reserva-destaque" href="reserva.html"
+          >RESERVE JÁ</a
+        >
+      </section>
+    </div>
+
+    <!--Parte principal do site-->
+    <main>
+      <!--seção SOBRE do main-->
+      <section class="sobre">
+        <div class="container-fluid px-4">
+          <h2 class="titulo-sobre-secao">Sobre o Resort</h2>
+
+          <div class="row gx-1 justify-content-center">
+            <div class="col-12 col-md-5">
+              <img src="img/praias/praia1.jpg" alt="Praia" class="img-fluid" />
+            </div>
+
+            <div class="col-12 col-md-6 texto-sobre">
+              <h2 class="titulo-sobre">Bem-vindo ao Resort Beira-Mar</h2>
+
+              <p class="paragrafo-sobre">
+                Localizado em Enseada dos Corais no litoral sul de Pernambuco ,
+                o Resort Beira-Mar oferece uma experiência única de lazer e
+                conforto. Com uma variedade de acomodações, gastronomia de alta
+                qualidade e atividades de lazer para todas as idades, nosso
+                resort é o destino ideal para suas férias.
+              </p>
+
+              <a class="btn btn-primary" href="sobre.html">SAIBA MAIS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- seção de destaques da home -->
+      <section class="destaque-site">
+        <div class="container-fluid px-4">
+          <h2 class="titulo-destaque">Explore Experiências Inesquecíveis</h2>
+
+          <div class="row gx-1">
+            <div class="col-12 col-md-4 destaque1">
+              <img src="img/praias/praia3.jpg" alt="Praia" class="img-fluid" />
+              <p>Praia</p>
+            </div>
+
+            <div class="col-12 col-md-4 destaque2">
+              <img
+                src="img/praias/praia4.jpg"
+                alt="Piscina"
+                class="img-fluid"
+              />
+              <p>Piscina</p>
+            </div>
+
+            <div class="col-12 col-md-4 destaque3">
+              <img
+                src="img/praias/praia2.jpg"
+                alt="Gastronomia"
+                class="img-fluid"
+              />
+              <p>Gastronomia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- acomodações em destaque -->
+      <section class="acomodacao-destaque">
+        <div class="container">
+          <h2 class="titulo-acomodacao">ACOMODAÇÕES EM DESTAQUE</h2>
+
+          <div class="row g-5">
+            <div class="col-12 col-md-6 acomodacao1">
+              <article class="card h-100">
+                <img
+                  src="img/praias/praia2.jpg"
+                  class="card-img-top"
+                  alt="Suíte Premium"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Suíte Premium</h3>
+                  <p class="card-text">2 hóspedes · Ar-condicionado · Wi-Fi</p>
+                  <a href="acomodacoes.html" class="btn btn-primary"
+                    >VER DETALHES</a
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 acomodacao2">
+              <article class="card h-100">
+                <img
+                  src="img/praias/praia3.jpg"
+                  class="card-img-top"
+                  alt="Suíte Master"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Suíte Master</h3>
+                  <p class="card-text">4 hóspedes · Ar-condicionado · Wi-Fi</p>
+                  <a href="acomodacoes.html" class="btn btn-primary"
+                    >VER DETALHES</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="text-center mt-5">
+            <a href="acomodacoes.html" class="btn btn-primary"
+              >VER TODAS AS ACOMODAÇÕES</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.bak
+*.old
+.DS_Store
+Thumbs.db
+
+# Credenciais e configurações privadas
+.env
+.env.*
+!.env.example
+
+# Dependências JavaScript, caso existam
+node_modules/
