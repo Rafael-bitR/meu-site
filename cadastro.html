@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta | Resort Beira-Mar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="menu"></div>
+
+    <main class="pagina-interna pagina-cadastro">
+      <section class="container">
+        <h1 class="titulo-interno">CRIAR CONTA</h1>
+
+        <form class="formulario-cadastro">
+          <label for="nome-cadastro">Nome</label>
+          <input
+            class="form-control"
+            id="nome-cadastro"
+            name="nome"
+            type="text"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email-cadastro">E-mail</label>
+          <input
+            class="form-control"
+            id="email-cadastro"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="senha-cadastro">Senha</label>
+          <input
+            class="form-control"
+            id="senha-cadastro"
+            name="senha"
+            type="password"
+            autocomplete="new-password"
+            required
+          />
+
+          <label for="confirmar-senha">Confirmar senha</label>
+          <input
+            class="form-control"
+            id="confirmar-senha"
+            name="confirmar-senha"
+            type="password"
+            autocomplete="new-password"
+            required
+          />
+
+          <button class="btn btn-primary w-100" type="button">
+            CRIAR CONTA
+          </button>
+
+          <p class="link-login">
+            Já tem uma conta?
+            <a href="login.html">Entrar</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

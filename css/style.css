@@ -1,4 +1,7 @@
-/* Botão estilo global */
+/* =========================================================
+   BOTÕES GLOBAIS
+   ========================================================= */
+
 .btn-primary {
   color: #123c46;
   font-family: "Poppins", sans-serif;
@@ -14,7 +17,10 @@
   color: #123c46;
 }
 
-/* Menu estilo */
+
+/* =========================================================
+   MENU COMPARTILHADO
+   ========================================================= */
 
 .logo img {
   width: 70px;
@@ -26,32 +32,34 @@
   align-items: center;
 }
 
-/* Menu estilo */
 .menu {
   display: flex;
   gap: 50px;
-  margin-left: 50px;
   margin-top: 2px;
+  margin-left: 50px;
 }
 
-/* Menu links estilo */
 .menu a {
-  text-decoration: none;
   color: #fff9e9;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  text-decoration: none;
 }
 
-/* Menu links hover estilo */
 .menu a:hover {
   color: #20c9a6;
 }
 
-/* botão reserva menu estilo */
+/* Destaque visual do link da página atual, definido pelo JavaScript */
+.menu a.active {
+  color: #20c9a6;
+  border-bottom: 2px solid #20c9a6;
+}
+
 .reserva-menu {
-  margin-left: auto;
-  margin-right: 20px;
   margin-top: 2px;
+  margin-right: 20px;
+  margin-left: auto;
   padding: 6px 16px;
   border-radius: 5px;
   transform: translateY(-1px);
@@ -59,10 +67,14 @@
 
 header {
   background-color: #123c46;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 
-/* Destaque estilo */
+
+/* =========================================================
+   HERO DA HOME
+   ========================================================= */
+
 .destaque {
   display: flex;
   flex-direction: column;
@@ -75,190 +87,157 @@ header {
 }
 
 .destaque h1 {
-  font-family:
-    Cormorant Garamond,
-    serif;
   color: #123c46;
+  font-family: "Cormorant Garamond", serif;
   font-size: 70px;
 }
 
 .destaque p {
-  font-family: "Poppins", sans-serif;
-  color: #123c46;
-  font-size: 20px;
   margin-top: 10px;
+  color: #123c46;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
-/* Botão reserva destaque estilo */
 .reserva-destaque {
+  margin-top: 20px;
   padding: 6px 16px;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
 .hero-img {
-  background-image: url("../img/praias/praia4.jpg");
-  background-size: cover;
-  background-position: center;
   min-height: 1000px;
+  background-image: url("../img/praias/praia4.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-/* Main estilo */
+
+/* =========================================================
+   CONTEÚDO GERAL E SEÇÃO SOBRE DA HOME
+   ========================================================= */
+
+/* Mantém o rodapé no fim da janela quando a página tem pouco conteúdo */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
+  flex: 1;
   padding: 50px 0;
   background-color: #fff9e9;
 }
 
-/* Main titulo estilo */
 .titulo-sobre {
-  font-family:
-    cormorant garamond,
-    serif;
-  font-size: 50px;
   color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
 }
 
-/* Main paragrafo estilo */
 .paragrafo-sobre {
+  margin-top: 20px;
+  color: #123c46;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: #123c46;
-  margin-top: 20px;
   line-height: 1.5;
 }
 
-/* Main imagem */
 .sobre .col-md-5 img {
   width: 80%;
   height: auto;
   border-radius: 20px;
 }
 
-/* Main titulo sobre */
 .titulo-sobre-secao {
-  font-family:
-    cormorant garamond,
-    serif;
-  font-size: 55px;
-  color: #123c46;
-  margin: 0 auto 50px;
-  text-align: center;
-  border-bottom: 2px solid #20c9a6;
-  padding-bottom: 8px;
   width: fit-content;
-  margin-top: -40px;
+  margin: -40px auto 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c9a6;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  text-align: center;
 }
 
-/* Main titulo destaques */
+
+/* =========================================================
+   CARROSSEL DA SEÇÃO SOBRE DA HOME
+   ========================================================= */
+
+/* Mantém o carrossel com a mesma largura da imagem original */
+.sobre .carousel {
+  width: 80%;
+}
+
+/* As fotos preenchem o carrossel sem serem deformadas */
+.sobre .carousel img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   DESTAQUES DA HOME
+   ========================================================= */
+
 .titulo-destaque {
-  font-family:
-    cormorant garamond,
-    serif;
-  font-size: 55px;
-  color: #123c46;
-  margin: 0 auto 50px;
-  text-align: center;
-  border-bottom: 2px solid #20c9a6;
-  padding-bottom: 8px;
   width: fit-content;
-  margin-top: 170px;
+  margin: 170px auto 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c9a6;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  text-align: center;
 }
 
-/* Main texto destaques */
 .destaque-site p {
+  color: #123c46;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-align: center;
-  color: #123c46;
 }
 
-/* Main imagem destaques */
 .destaque-site .col-md-4 img {
-  aspect-ratio: 1.6 / 1.2;
-  object-fit: cover;
   width: 80%;
+  aspect-ratio: 1.6 / 1.2;
   border-radius: 20px;
+  object-fit: cover;
 }
 
 .destaque-site .col-md-4 {
   text-align: center;
 }
 
-/* acomodações destaque */
+
+/* =========================================================
+   ACOMODAÇÕES EM DESTAQUE NA HOME
+   ========================================================= */
+
 .titulo-acomodacao {
-  font-family:
-    cormorant garamond,
-    serif;
-  font-size: 55px;
-  color: #123c46;
-  margin: 0 auto 50px;
-  text-align: center;
-  border-bottom: 2px solid #20c9a6;
-  padding-bottom: 8px;
   width: fit-content;
-  margin-top: 170px;
+  margin: 170px auto 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c9a6;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  text-align: center;
 }
 
 .acomodacao-destaque .card {
   background-color: #20c9a6;
 }
 
-/*Rodapé*/
-footer {
-  background-color: #333;
-  color: white;
-  padding: 32px 0 16px;
-}
 
-.redes-sociais img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
+/* =========================================================
+   PÁGINA DE ACOMODAÇÕES
+   ========================================================= */
 
-.icones-redes {
-  display: flex;
-  gap: 50px;
-}
-
-footer a {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-
-footer address a,
-footer nav[aria-label="Links do rodapé"] a {
-  display: block;
-}
-
-.direitos-reservados {
-  margin-top: 100px;
-}
-
-footer address {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-footer address p {
-  margin: 0;
-}
-
-footer nav[aria-label="Links do rodapé"] a {
-  display: block;
-  margin-bottom: 8px;
-}
-
-footer h2 {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 25px;
-}
-
-/* Página de acomodações */
 .pagina-acomodacoes {
   padding: 50px 0;
   background-color: #fff9e9;
@@ -321,7 +300,11 @@ footer h2 {
   color: #fff;
 }
 
-/* Página de lazer */
+
+/* =========================================================
+   PÁGINA DE LAZER
+   ========================================================= */
+
 .pagina-lazer {
   padding: 50px 0;
   background-color: #fff9e9;
@@ -363,4 +346,288 @@ footer h2 {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+}
+
+
+/* =========================================================
+   ESTILOS COMPARTILHADOS DAS PÁGINAS INTERNAS
+   ========================================================= */
+
+/* Fundo e espaçamento das páginas internas */
+.pagina-interna {
+  padding: 50px 0;
+  background-color: #fff9e9;
+}
+
+/* Título compartilhado por Gastronomia, Galeria, Sobre e Reservas */
+.titulo-interno {
+  width: fit-content;
+  margin: 0 auto 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #20c9a6;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  text-align: center;
+}
+
+
+/* =========================================================
+   PÁGINA DE GASTRONOMIA
+   ========================================================= */
+
+.bloco-gastronomia img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bloco-gastronomia h2 {
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+}
+
+.bloco-gastronomia p {
+  color: #123c46;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.separador-pagina {
+  margin: 30px 0;
+  border-color: #ccc;
+}
+
+
+/* =========================================================
+   PÁGINA DE GALERIA
+   ========================================================= */
+
+.pagina-galeria img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   PÁGINA SOBRE NÓS
+   ========================================================= */
+
+.bloco-sobre img {
+  width: 100%;
+  height: 280px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bloco-sobre h2 {
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+}
+
+.bloco-sobre p {
+  color: #123c46;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PÁGINA DE RESERVAS E CONTATO
+   ========================================================= */
+
+.pagina-reservas h2 {
+  margin-bottom: 16px;
+  color: #123c46;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+}
+
+.pagina-reservas form label {
+  display: block;
+  margin: 12px 0 4px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.pagina-reservas textarea {
+  resize: vertical;
+}
+
+.botao-enviar {
+  width: 200px;
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.botao-enviar:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Espaço provisório que representa o mapa no wireframe */
+.mapa-placeholder {
+  display: grid;
+  min-height: 250px;
+  margin-top: 24px;
+  place-items: center;
+  background-color: #e8e8e8;
+  color: #888;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   RODAPÉ COMPARTILHADO
+   ========================================================= */
+
+#footer {
+  margin-top: auto;
+}
+
+footer {
+  padding: 32px 0 16px;
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer address a,
+footer nav[aria-label="Links do rodapé"] a {
+  display: block;
+}
+
+footer address p {
+  margin: 0;
+}
+
+footer nav[aria-label="Links do rodapé"] a {
+  margin-bottom: 4px;
+}
+
+footer h2 {
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.redes-sociais img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.icones-redes {
+  display: flex;
+  gap: 50px;
+}
+
+.direitos-reservados {
+  margin-top: 32px;
+}
+
+/* Página de login */
+.formulario-login {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.formulario-login label {
+  display: block;
+  margin: 16px 0 4px;
+  color: #123c46;
+  font-family: "Poppins", sans-serif;
+}
+
+.link-cadastro {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-menu {
+  margin-left: auto;
+  margin-right: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.reserva-menu {
+  margin-left: 0;
+}
+
+/* Fundo das páginas de login e cadastro */
+.pagina-login,
+.pagina-cadastro {
+  background-color: #fff9e9;
+}
+
+/* Cartões brancos dos formulários */
+.pagina-login .formulario-login,
+.pagina-cadastro .formulario-cadastro {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 18px rgba(18, 60, 70, 0.12);
+}
+
+/* O cartão de login fica um pouco mais estreito */
+.pagina-login .formulario-login {
+  max-width: 440px;
+}
+
+/* Rótulos dos campos */
+.pagina-login form label,
+.pagina-cadastro form label {
+  display: block;
+  margin: 16px 0 6px;
+  color: #123c46;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Espaço antes dos botões e dos links entre as páginas */
+.pagina-login form .btn,
+.pagina-cadastro form .btn {
+  margin-top: 20px;
+}
+
+.pagina-login .link-cadastro,
+.pagina-cadastro .link-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagina-login .link-cadastro a,
+.pagina-cadastro .link-login a {
+  color: #123c46;
+}
+
+/* Reduz o espaço interno em telas pequenas */
+@media (max-width: 576px) {
+  .pagina-login .formulario-login,
+  .pagina-cadastro .formulario-cadastro {
+    padding: 24px 18px;
+  }
 }

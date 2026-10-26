@@ -1,39 +1,111 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas | Resort Beira-Mar</title>
 
-    <title>Resort Beira-Mar</title>
-
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!--menu do site-->
     <div id="menu"></div>
 
-    <main></main>
+    <main class="pagina-interna pagina-reservas">
+      <section class="container">
+        <h1 class="titulo-interno">RESERVAS E CONTATO</h1>
 
-    <!--rodapé do site-->
+        <div class="row g-5">
+          <section class="col-12 col-lg-6">
+            <h2>Informações de Contato</h2>
+            <p>Telefone: <a href="tel:+551100000000">+55 (11) 0000-0000</a></p>
+            <p>
+              E-mail:
+              <a href="mailto:resort_beira_mar@gmail.com">
+                resort_beira_mar@gmail.com
+              </a>
+            </p>
+            <p>Endereço: Enseada dos Corais, Cabo de Santo Agostinho - PE</p>
+
+            <div
+              class="mapa-placeholder"
+              role="img"
+              aria-label="Espaço para o mapa"
+            >
+              MAPA
+            </div>
+          </section>
+
+          <section class="col-12 col-lg-6">
+            <h2>Formulário de Reserva</h2>
+
+            <form>
+              <label for="nome">Nome</label>
+              <input class="form-control" id="nome" name="nome" type="text" />
+
+              <label for="email">E-mail</label>
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                type="email"
+              />
+
+              <label for="telefone">Telefone</label>
+              <input
+                class="form-control"
+                id="telefone"
+                name="telefone"
+                type="tel"
+              />
+
+              <label for="entrada">Data de entrada</label>
+              <input
+                class="form-control"
+                id="entrada"
+                name="entrada"
+                type="date"
+              />
+
+              <label for="saida">Data de saída</label>
+              <input class="form-control" id="saida" name="saida" type="date" />
+
+              <label for="hospedes">Nº de hóspedes</label>
+              <input
+                class="form-control"
+                id="hospedes"
+                name="hospedes"
+                type="number"
+                min="1"
+              />
+
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+              ></textarea>
+
+              <button class="btn botao-enviar" type="button">ENVIAR</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
     <div id="footer"></div>
-
     <script src="js/menu.js"></script>
   </body>
 </html>

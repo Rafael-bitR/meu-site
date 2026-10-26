@@ -1,39 +1,83 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gastronomia | Resort Beira-Mar</title>
 
-    <title>Resort Beira-Mar</title>
-
-    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!--menu do site-->
     <div id="menu"></div>
 
-    <main></main>
+    <main class="pagina-interna pagina-gastronomia">
+      <section class="container">
+        <h1 class="titulo-interno">GASTRONOMIA</h1>
 
-    <!--rodapé do site-->
+        <div class="row g-5 align-items-center bloco-gastronomia">
+          <div class="col-12 col-lg-6">
+            <img
+              src="img/gastronomia/restaurante.jpg"
+              alt="Restaurante principal do resort"
+            />
+          </div>
+          <div class="col-12 col-lg-5">
+            <h2>Restaurante Principal</h2>
+            <p>
+              Culinária internacional com ingredientes locais frescos. Aberto
+              para almoço e jantar.
+            </p>
+          </div>
+        </div>
+
+        <hr class="separador-pagina" />
+
+        <div class="row g-5 align-items-center bloco-gastronomia">
+          <div class="col-12 col-lg-5">
+            <h2>Bar da Piscina</h2>
+            <p>
+              Drinks tropicais e petiscos leves à beira da piscina. Aberto das
+              10h às 18h.
+            </p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="img/gastronomia/bar-piscina.jpg" alt="Bar da piscina" />
+          </div>
+        </div>
+
+        <hr class="separador-pagina" />
+
+        <div class="row g-5 align-items-center bloco-gastronomia">
+          <div class="col-12 col-lg-6">
+            <img
+              src="img/gastronomia/cafe-da-manha.jpg"
+              alt="Café da manhã do resort"
+            />
+          </div>
+          <div class="col-12 col-lg-5">
+            <h2>Café da Manhã</h2>
+            <p>
+              Buffet com opções regionais e internacionais. Aberto das 6h30 às
+              10h30.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <div id="footer"></div>
-
     <script src="js/menu.js"></script>
   </body>
 </html>
