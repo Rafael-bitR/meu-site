@@ -473,16 +473,9 @@ main {
   color: #fff;
 }
 
-/* Espaço provisório que representa o mapa no wireframe */
-.mapa-placeholder {
-  display: grid;
-  min-height: 250px;
+/* ajuste mapa */
+.mapa-container {
   margin-top: 24px;
-  place-items: center;
-  background-color: #e8e8e8;
-  color: #888;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
 }
 
 
