@@ -631,3 +631,259 @@ footer h2 {
     padding: 24px 18px;
   }
 }
+/* =========================================================
+   AJUSTES PARA CELULARES E TABLETS
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+  /* O menu ocupa algumas linhas em vez de ultrapassar a tela */
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  .logo img {
+    width: 56px;
+    margin-left: 0;
+  }
+
+  .menu {
+    order: 3;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    margin: 10px 0 4px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .login-menu {
+    margin-left: auto;
+    margin-right: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .reserva-menu {
+    margin: 0;
+    padding: 6px 10px;
+    font-size: 14px;
+    transform: none;
+  }
+
+  /* Reduz a altura do banner e adapta o texto da home */
+  .hero-img {
+    min-height: 760px;
+  }
+
+  .destaque {
+    padding: 36px 16px;
+    text-align: center;
+  }
+
+  .destaque img {
+    width: min(400px, 90%);
+  }
+
+  .destaque h1 {
+    font-size: clamp(40px, 10vw, 58px);
+    line-height: 1.05;
+  }
+
+  .destaque p {
+    font-size: 17px;
+  }
+
+  /* Títulos compridos podem quebrar linha sem estourar a largura */
+  .titulo-sobre-secao,
+  .titulo-destaque,
+  .titulo-acomodacao,
+  .titulo-pagina-acomodacoes,
+  .titulo-pagina-lazer,
+  .titulo-interno {
+    max-width: 100%;
+    font-size: clamp(34px, 8vw, 46px);
+    line-height: 1.1;
+  }
+
+  .titulo-destaque,
+  .titulo-acomodacao {
+    margin-top: 80px;
+  }
+
+  .sobre .col-md-5 img,
+  .sobre .carousel {
+    display: block;
+    width: 100%;
+    margin: 0 auto 24px;
+  }
+
+  .titulo-sobre {
+    font-size: clamp(32px, 7vw, 42px);
+  }
+
+  .paragrafo-sobre {
+    font-size: 16px;
+  }
+
+  .destaque-site .col-md-4 img {
+    width: 100%;
+  }
+
+  .bloco-gastronomia h2,
+  .bloco-sobre h2 {
+    font-size: 30px;
+  }
+
+  .bloco-gastronomia img,
+  .bloco-sobre img {
+    margin-bottom: 20px;
+  }
+
+  /* Diminui o afastamento entre ícones do rodapé */
+  .icones-redes {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .direitos-reservados {
+    margin-top: 28px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    column-gap: 14px;
+  }
+
+  .menu a {
+    font-size: 13px;
+  }
+
+  .login-menu,
+  .reserva-menu {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================================
+   MENU RECOLHÍVEL EM TELAS PEQUENAS
+   ========================================================= */
+
+/* No computador, o painel não cria uma caixa extra e os links
+   continuam na mesma barra horizontal. */
+.menu-painel {
+  display: contents;
+}
+
+.menu-checkbox,
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  header,
+  .navbar {
+    position: relative;
+  }
+
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 8px 12px;
+  }
+
+  .logo img {
+    width: 56px;
+    margin-left: 0;
+  }
+
+  /* Esconde o checkbox visualmente, mas mantém seu controle pelo label */
+  .menu-checkbox {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  /* Ícone de três linhas que funciona como controle do menu */
+  .menu-toggle {
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid rgba(255, 249, 233, 0.65);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff9e9;
+  }
+
+  .menu-checkbox:focus-visible + .menu-toggle {
+    outline: 3px solid #ffa412;
+    outline-offset: 3px;
+  }
+
+  /* O painel fica escondido até marcar o checkbox */
+  .menu-painel {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 0 0 16px 16px;
+    background-color: #123c46;
+  }
+
+  .menu-checkbox:checked ~ .menu-painel {
+    display: flex;
+  }
+
+  .menu-painel .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  .menu-painel .menu a {
+    padding: 10px 4px;
+    font-size: 15px;
+  }
+
+  .menu-painel .login-menu,
+  .menu-painel .reserva-menu {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    transform: none;
+  }
+}
+
+

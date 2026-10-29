@@ -1,11 +1,25 @@
 <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logo/logo-sem-nome.png" alt="Logo" />
-        </a>
-      </div>
+  <nav class="navbar" aria-label="Navegação principal">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo/logo-sem-nome.png" alt="Resort Beira-Mar — início" />
+      </a>
+    </div>
 
+    <!-- Checkbox usado como controle do menu no celular -->
+    <input
+      class="menu-checkbox"
+      type="checkbox"
+      id="menu-toggle"
+      aria-label="Abrir ou fechar menu"
+    />
+    <label class="menu-toggle" for="menu-toggle" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="menu-painel">
       <div class="menu">
         <a href="acomodacoes.html">Acomodações</a>
         <a href="gastronomia.html">Gastronomia</a>
@@ -16,5 +30,7 @@
 
       <a class="btn btn-outline-light login-menu" href="login.html">ENTRAR</a>
       <a class="btn btn-primary reserva-menu" href="reserva.html">RESERVE JÁ</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+
